@@ -28,4 +28,4 @@ The model's weights file is available at **trained_model/En2Sp.pt**. To evaluate
 
 (4) she is pretty. -> Está muy hermosa            \<CORRECT>
 
-(5) we spent the night in a cheap hotel -> Pasamos el hotel barato de noche              <CORRECT>
+(5) we spent the night in a cheap hotel -> Pasamos el hotel barato de noche              \<CORRECT>
