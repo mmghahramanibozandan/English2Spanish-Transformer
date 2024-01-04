@@ -8,15 +8,15 @@ I utilized the **spa.txt** dataset, comprising pairs of English-Spanish sentence
 
 ## Training the Transformer
 
-To build up the transformer, **my_transformer.py**, I set **d_model=40**, **heads=2**, **N(number of in encoder/decoder layers)=1**. The transformer is optimized in **my_train.py** using **epochs=450** . It consists of 4 different phases: (i) **epochs=200, lr=0.001**, (ii) **epochs=100, lr=0.0005**, (iii) **epochs=100, lr=0.0001** and (iv) **epochs=50, lr=0.00005**. Each **print_step = 10** times, the training function prints out the translation of a sample English language **test_sen = "we spent the night in a cheap hotel"** to see the progress when loss decreases. One can take a look at it by reviewing **English2Spanish.ipynb** notebook, where all the mentioned steps are implemented. (**total training time : 3 hours and 30 minutes**)
+In constructing the transformer, **my_transformer.py**, I configured parameters as follows: **d_model=40**, **heads=2**, and **N (number of encoder/decoder layers)=1**. The optimization of the transformer occurs in **my_train.py** with epochs set to **epochs=450**. The training process unfolds across four distinct phases: (i) **epochs=200, lr=0.001**, (ii) **epochs=100, lr=0.0005**, (iii) **epochs=100, lr=0.0001**, and (iv) **epochs=50, lr=0.00005**. The training function prints the translation of a sample English test sentence, **test_sen = "we spent the night in a cheap hotel"** every **print_step = 10** steps to observe progress as the loss decreases. To review these steps, refer to the **English2Spanish.ipynb** notebook where all the mentioned configurations are implemented. The total training time amounts to **3 hours and 30 minutes**. The transformer requires training on a total of **2,747,405** parameters.
 
 ## Saving the Params
 
-Once the model is trained, **SRC_Tokens, TRG_Tokens** are saved as a pickle file. This will allow us not to have to read the entire dataset again when testing the model. This pickle file is available at **saved_params/params.pkl**.
+Once the model is trained, **SRC_Tokens, TRG_Tokens** are saved as a pickle file. This will eliminate the need to re-read the entire dataset during model testing. The pickle file can be found at **saved_params/params.pkl**.
 
 ## Translation
 
-The model's weights are available at **trained_model/En2Sp.pt**. To evaluate the model, one can clone the repository and execute the command: **python3 translate.py \<sentence> \<path_to_model> \<path_to_params>**, where \<sentence> is an English language, \<path_to_model> is the path to model's weights (trained_model/En2Sp.pt) and \<path_to_params> is the path to the pickle file (saved_params/params.pkl).
+The model's weights file is available at **trained_model/En2Sp.pt**. To evaluate the model, one can clone the repository and execute the command: **python3 translate.py \<sentence> \<path_to_model> \<path_to_params>**, where \<sentence> is an English language, \<path_to_model> is the path to model's weights file (trained_model/En2Sp.pt) and \<path_to_params> is the path to the pickle file (saved_params/params.pkl).
 
 ## Examples
 
