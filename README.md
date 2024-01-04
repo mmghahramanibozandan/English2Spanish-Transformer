@@ -3,6 +3,8 @@
 This repository is a small part of my Master's thesis, designing a machine translator (English to Spanish) in PyTorch from scratch. This would be a great example, showing how to come up with a not-large transformer to effectively translate English
 sentences to Spanish ones. All parts, e.g., the transformer and tokenizers, have been implemented from scratch. The model can be easily tested/fine-tuned using GPUs in Google Colab (Standard Subscription).
 
+This repository constitutes a segment of my Master's thesis to test my customized transformer, where I developed a PyTorch-based machine translator from English to Spanish. It serves as an exemplary demonstration of constructing a compact transformer for proficiently translating English sentences into Spanish. All components, including the transformer, have been created entirely from the ground up. The model is conveniently testable and adaptable through GPU utilization in Google Colab (Standard Subscription).
+
 ## Dataset
 
 I used **spa.txt** dataset, including english-spanish pairs of sentences. The number of data samples **M=100000**. This volume of data can be a good choice for a decent generalization in Machine Translation tasks. The file to the data is uploaded in **data/spa.txt**. Source vocab (English vocab) consists of **src_vocab=10904** tokens and Target vocab (Spanish vocab) consists of **trg_vocab=24189** tokens (for Spanish sentences it also includes **\<st>** and **\<end>** tokens). Each sentence (be either English or Spanish) is zero-padded (**\<pad>** token) to reach a length of **MAX_LEN=21**. This number is the length of the longest sentence available in our dataset.
