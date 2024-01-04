@@ -1,8 +1,5 @@
 # English2Spanish-Transformer
 
-This repository is a small part of my Master's thesis, designing a machine translator (English to Spanish) in PyTorch from scratch. This would be a great example, showing how to come up with a not-large transformer to effectively translate English
-sentences to Spanish ones. All parts, e.g., the transformer and tokenizers, have been implemented from scratch. The model can be easily tested/fine-tuned using GPUs in Google Colab (Standard Subscription).
-
 This repository constitutes a segment of my Master's thesis to test my customized transformer, where I developed a PyTorch-based machine translator from English to Spanish. It serves as an exemplary demonstration of constructing a compact transformer for proficiently translating English sentences into Spanish. All components, including the transformer, have been created entirely from the ground up. The model is conveniently testable and adaptable through GPU utilization in Google Colab (Standard Subscription).
 
 ## Dataset
