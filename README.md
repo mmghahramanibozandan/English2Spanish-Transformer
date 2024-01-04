@@ -4,7 +4,7 @@ This repository constitutes a segment of my Master's thesis to test my customize
 
 ## Dataset
 
-I utilized the **spa.txt** dataset, comprising pairs of English-Spanish sentences. The dataset contains a total of **M=100,000** data samples, making it a suitable choice for achieving robust generalization in Machine Translation tasks. The data file is accessible at **data/spa.txt**. The source vocabulary (English vocab) comprises **src_vocab=10,904** tokens, while the target vocabulary (Spanish vocab) encompasses **trg_vocab=24,189** tokens (including **\<st>** and **\<end>** tokens for Spanish sentences). To standardize the length of each sentence, whether in English or Spanish, zero-padding (**\<pad>** token) is applied to reach a length of **\MAX_LEN=21**. This length corresponds to the longest sentence present in our dataset.
+I utilized the **spa.txt** dataset, comprising pairs of English-Spanish sentences. The dataset contains a total of **M=100,000** data samples, making it a suitable choice for achieving robust generalization in Machine Translation tasks. The data file is accessible at **data/spa.txt**. The source vocabulary (English vocab) comprises **src_vocab=10,904** tokens, while the target vocabulary (Spanish vocab) encompasses **trg_vocab=24,189** tokens (including **\<st>** and **\<end>** tokens for Spanish sentences). To standardize the length of each sentence, whether in English or Spanish, zero-padding (**\<pad>** token) is applied to reach a length of **MAX_LEN=21**. This length corresponds to the longest sentence present in our dataset.
 
 ## Training the Transformer
 
