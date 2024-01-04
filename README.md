@@ -24,7 +24,7 @@ The model's weights file is available at **trained_model/En2Sp.pt**. To evaluate
 
 (2) what is my name? -> ¿Cómo es mi nombre        \<CORRECT>
 
-(3) how are you? -> ¿Cómo haces                   \<WRONG>(¿Cómo haces: how do you do?)
+(3) how are you? -> ¿Cómo haces                   \<WRONG>
 
 (4) she is pretty. -> Está muy hermosa            \<CORRECT>
 
