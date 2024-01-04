@@ -1,6 +1,6 @@
 # English2Spanish-Transformer
 
-This repository constitutes a segment of my Master's thesis to test my customized transformer, where I developed a PyTorch-based machine translator from English to Spanish. It serves as an exemplary demonstration of constructing a compact transformer for proficiently translating English sentences into Spanish. All components, including the transformer, have been created entirely from the ground up. The model is conveniently testable and adaptable through GPU utilization in Google Colab (Standard Subscription).
+This repository constitutes a segment of my Master's thesis (text-conditioned image generation) to test my customized transformer, where I developed a PyTorch-based machine translator from English to Spanish. It serves as an exemplary demonstration of constructing a compact transformer for proficiently translating English sentences into Spanish. All components, including the transformer, have been created entirely from the ground up. The model is conveniently testable and adaptable through GPU utilization in Google Colab (Standard Subscription).
 
 ## Dataset
 
@@ -8,7 +8,7 @@ I utilized the **spa.txt** dataset, comprising pairs of English-Spanish sentence
 
 ## Training the Transformer
 
-In constructing the transformer, **my_transformer.py**, I configured parameters as follows: **d_model=40**, **heads=2**, and **N (number of encoder/decoder layers)=1**. The optimization of the transformer occurs in **my_train.py** with epochs set to **epochs=450**. The training process unfolds across four distinct phases: (i) **epochs=200, lr=0.001**, (ii) **epochs=100, lr=0.0005**, (iii) **epochs=100, lr=0.0001**, and (iv) **epochs=50, lr=0.00005**. The training function prints the translation of a sample English test sentence, **test_sen = "we spent the night in a cheap hotel"** every **print_step = 10** steps to observe progress as the loss decreases. To review these steps, refer to the **English2Spanish.ipynb** notebook where all the mentioned configurations are implemented. The total training time amounts to **3 hours and 30 minutes**. The transformer requires training on a total of **2,747,405** parameters.
+In constructing the transformer, **my_transformer.py**, I configured parameters as follows: **d_model=40**, **heads=2**, and **N (number of encoder/decoder layers)=1** (the remaining parameters are configured in accordance with the specifications outlined in the original paper: 'Attention Is All You Need'). The optimization of the transformer occurs in **my_train.py** with epochs set to **epochs=450**. The training process unfolds across four distinct phases: (i) **epochs=200, lr=0.001**, (ii) **epochs=100, lr=0.0005**, (iii) **epochs=100, lr=0.0001**, and (iv) **epochs=50, lr=0.00005**. The training function prints the translation of a sample English test sentence, **test_sen = "we spent the night in a cheap hotel"** every **print_step = 10** steps to observe progress as the loss decreases. To review these steps, refer to the **English2Spanish.ipynb** notebook where all the mentioned configurations are implemented. The total training time amounts to **3 hours and 30 minutes**. The transformer requires training on a total of **2,747,405** parameters.
 
 ## Saving the Params
 
