@@ -18,6 +18,7 @@ Once the model is trained, `SRC_Tokens, TRG_Tokens` are saved as a pickle file. 
 
 The model's weights file is available at `trained_model/En2Sp.pt`. To evaluate the model, one can clone the repository and execute the command: **python3 translate.py \<sentence> \<path_to_model> \<path_to_params>**, where `<sentence>` is an English language, `<path_to_model>` is the path to model's weights file (trained_model/En2Sp.pt) and `<path_to_params>` is the path to the pickle file (saved_params/params.pkl).
 
+**IMPORTANT NOTE**: Apparently, Github does not properly depict specific symbols in Python notebooks, e.g., it does not show `<end>`, `<st>`, and `<pad>` tokens and you might think they are empty strings. (check `def create_tokens(source_dataset)` and/or `def translate(sentence, device)`). For this reason, I have also uploaded the .py file of the notebook where these tokens are depicted properly. It can be found at `py-file/english2spanish.py` So make sure that the .ipynb file might be misleading)
 ## Examples
 
 (1) hello! -> Hola                                \<CORRECT>
